@@ -1,4 +1,6 @@
-
+main{
+    overflow-x: hidden;
+}
 .land-des{
     width:340px;
     top:30%;
@@ -31,6 +33,38 @@
 .TdSp-img{
     height: 10px;
 }
+
+.section4 #starter {
+    display: block;
+  }
+
+/* Hide all sections initially except for #starter */
+.section4 #main-dish,
+.section4 #drinks,
+.section4 #dessert {
+  display: none;
+}
+
+
+
+/* Show the targeted section */
+.section4 #starter:target,
+.section4 #main-dish:target,
+.section4 #drinks:target,
+.section4 #dessert:target {
+  display: block;
+}
+
+/* Hide sections that are not targeted */
+.section4 #starter:not(:target),
+.section4 #main-dish:not(:target),
+.section4 #drinks:not(:target),
+.section4 #dessert:not(:target) {
+  display: none;
+}
+
+
+
 @media screen and (min-width:768px){
 
     .section3>h2{
